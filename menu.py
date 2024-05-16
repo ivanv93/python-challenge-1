@@ -118,7 +118,7 @@ while place_order:
                     }
                     i += 1
             # 2. Ask customer to input menu item number
-            menu_item_number = input("Please choose a menu item number:")
+            menu_item_number = input("Please choose a menu item number: ")
 
             # 3. Check if the customer typed a number
             if menu_item_number.isdigit():
@@ -132,7 +132,7 @@ while place_order:
                     menu_item_name = menu_items[menu_item_number]["Item name"]
 
                     # Ask the customer for the quantity of the menu item
-                    menu_item_qty = input("Please enter the quantity of the menu item you would like:")
+                    menu_item_qty = input("Please enter the quantity of the menu item you would like: ")
 
                     # Check if the quantity is a number, default to 1 if not
                     if menu_item_qty.isdigit():
@@ -148,14 +148,14 @@ while place_order:
 
                     # Tell the customer that their input isn't valid
                 else:
-                    print(f"{menu_item_number} is an invalid input.")    
+                    print("Your input isn't valid.")    
 
                 # Tell the customer they didn't select a menu option
             else:
                 print("You didn't select a menu option.")
         else:
             # Tell the customer they didn't select a menu option
-            print(f"{menu_category} was not a menu option.")
+            print("You didn't select a menu option.")
     else:
         # Tell the customer they didn't select a number
         print("You didn't select a number.")
@@ -187,7 +187,7 @@ while place_order:
             print("Would you like to keep ordering? (Y)es or (N)o ")
 
 # Print out the customer's order
-print("This is what we are preparing for you.\n")
+print("This is what we are preparing for you.")
 
 # Uncomment the following line to check the structure of the order
 print(order_list)
